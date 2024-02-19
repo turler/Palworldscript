@@ -7,11 +7,11 @@ After=network-online.target
 Type=simple
 User=steam
 Group=steam
-ExecStartPre=/home/steam/palworld-maintenance.sh
-ExecStart=/home/steam/Steam/steamapps/common/PalServer/PalServer.sh -useperfthreads -NoAsyncLoadingThread>
+ExecStartPre=/home/steam/Palworldscript/palworld-maintenance.sh
+ExecStart=/home/steam/Steam/steamapps/common/PalServer/PalServer.sh -useperfthreads -NoAsyncLoadingThread
 Restart=on-failure
 RestartSec=10s
-MemoryMax=15.5G
+MemoryMax=21.8G
 
 [Install]
 WantedBy=multi-user.target
