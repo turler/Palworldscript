@@ -1,5 +1,5 @@
-#!/bin/sh
-cron && tail -f /var/log/cron.log
+#!/bin/bash
+sudo service cron start
 /home/steam/Steam/steamcmd.sh +login anonymous +app_update 2394010 validate +quit
 wait
 cd /home/steam/Palworld_backups && /usr/bin/git pull
